@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/05e72eaf81.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js" defer></script>
+    <title>Clon Pinterest</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- NAVIGATION BAR  -->
+      <nav class="nav">
+        <a href="https://www.pinterest.com.mx/" class="nav__logo_link"
+          ><img
+            src="./images/pinterest.png"
+            alt="Pinterest logo"
+            class="nav__logo"
+            height="28px"
+        /></a>
+        <a href="https://www.pinterest.com.mx/" class="nav__home_link">Home</a>
+        <button class="nav__create_btn">
+          <span class="nav__create_btn_text">Create</span>
+          <i class="fa-solid fa-chevron-down nav__dropdown_menu"></i>
+        </button>
+        <div class="nav__search_container">
+          <input type="text" class="nav__search_input" placeholder="Search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="nav__notifications_link hover_circle">
+          <i class="fa-solid fa-bell nav__notifications_icon"></i>
+        </button>
+        <button class="nav__messages_link hover_circle">
+          <i class="fa-solid fa-comment-dots nav__messages_icon"></i>
+        </button>
+        <a
+          href="https://www.pinterest.com.mx/erickchavezesco/"
+          class="nav__profile_link hover_circle"
+        >
+          <img
+            src="./images/profile_pic.webp"
+            alt="Profile photo"
+            class="nav__profile_photo"
+            height="26px"
+          />
+        </a>
+        <button class="nav__dropdown_menu">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </nav>
+
+      <!-- SECTION WITH CARDS  -->
+      <main class="main">
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/430.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=pixel"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/400/300.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=female"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/830/800.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=pixel"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/530/200.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=pixel"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <!-- 4 NEW CARDS -->
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/330.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/200/300.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=female"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/440.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=pixel"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/270/100.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/220.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=pixel"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/423/300.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=female"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/240/300.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/125/200.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=pixel"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <!-- 4 NEW CARDS -->
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/260.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/227/300.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=female"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/280.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=pixel"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+
+        <div class="main__card">
+          <div class="main__card_img_box">
+            <img
+              src="https://picsum.photos/229/200.jpg"
+              alt="Pinterest image"
+              class="main__card_img"
+            />
+            <section class="main__card_img_cover">
+              <div class="main__card_img_cover_top">
+                <span class="main__card_img_cover_board"
+                  >board
+                  <i
+                    class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+                  ></i>
+                </span>
+                <button class="main__card_img_cover_save">Save</button>
+              </div>
+              <div class="main__card_img_cover_bottom">
+                <button class="main__card_img_cover_link">
+                  <img
+                    src="./images/up-right-arrow.png"
+                    alt="arrow up wight"
+                    width="20px"
+                  />
+                  website.com
+                </button>
+                <div class="main__card_img_cover_bottom_buttons">
+                  <button class="main__card_img_cover_send">
+                    <img src="./images/send.png" alt="send icon" width="20px" />
+                  </button>
+                  <button class="main__card_img_cover_more">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h3 class="main__card_description.">Lorem ipsum dolor sit.</h3>
+          <section class="main__card_author">
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="Profile author's photo"
+              class="main__card_author_photo"
+            />
+            <p class="main__card_author_name">Name Last | Brand</p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
