@@ -137,15 +137,22 @@ body {
   position: relative;
 }
 
+/* .main__card_img:hover {
+  filter: brightness(60%);
+} */
 .main__card_img_box {
   position: relative;
 }
 
 .main__card_img_cover {
-  margin-left: -1000px;
+  opacity: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
+
+/* .main__card_img_cover:hover {
+  opacity: 1;
+} */
 
 .main__card_img_cover_top {
   position: absolute;
