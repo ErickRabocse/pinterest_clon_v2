@@ -1,6 +1,40 @@
 const image_box = document.querySelector(".main__card_img_box");
+
+const image_cover_html = `<section class="main__card_img_cover">
+  <div class="main__card_img_cover_top">
+    <span class="main__card_img_cover_board"
+      >board
+      <i
+        class="fa-solid fa-chevron-down main__card_img_cover_board_arrow"
+      ></i>
+    </span>
+    <button class="main__card_img_cover_save">Save</button>
+  </div>
+  <div class="main__card_img_cover_bottom">
+    <button class="main__card_img_cover_link">
+      <img
+        src="./images/up-right-arrow.png"
+        alt="arrow up wight"
+        width="20px"
+      />
+      website.com
+    </button>
+    <div class="main__card_img_cover_bottom_buttons">
+      <button class="main__card_img_cover_send">
+        <img src="./images/send.png" alt="send icon" width="20px" />
+      </button>
+      <button class="main__card_img_cover_more">
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
+image_box.insertAdjacentHTML("beforeend", image_cover_html);
+
 const image_cover = document.querySelector(".main__card_img_cover");
-const image = document.querySelector(".main__card_img");
+const image = document.querySelectorAll(".main__card_img");
 
 function showDisplayCover() {
   image_cover.style.opacity = "1";
@@ -15,10 +49,11 @@ function hideDisplayCover() {
 image_box.addEventListener("mouseover", showDisplayCover);
 image_box.addEventListener("mouseout", hideDisplayCover);
 
-// for (var i = 0; i < image_box.length; i++) {
-//   image_box[i].addEventListener("click", function () {
+//FINDING THE INDEX OF AN ELEMENT
+// for (var i = 0; i < image.length; i++) {
+//   image[i].addEventListener("click", function () {
 //     // Get the index of the clicked element in the array
-//     var index = Array.prototype.indexOf.call(image_box, this);
+//     var index = Array.prototype.indexOf.call(image, this);
 //     console.log("Index of clicked image box: " + index);
 //   });
 // }
