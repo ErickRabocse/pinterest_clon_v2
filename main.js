@@ -1,5 +1,5 @@
 const image_box = document.querySelector(".main__card_img_box");
-
+const image = document.querySelector(".main__card_img");
 const image_cover_html = `<section class="main__card_img_cover">
   <div class="main__card_img_cover_top">
     <span class="main__card_img_cover_board"
@@ -32,9 +32,7 @@ const image_cover_html = `<section class="main__card_img_cover">
 `;
 
 image_box.insertAdjacentHTML("beforeend", image_cover_html);
-
 const image_cover = document.querySelector(".main__card_img_cover");
-const image = document.querySelectorAll(".main__card_img");
 
 function showDisplayCover() {
   image_cover.style.opacity = "1";
